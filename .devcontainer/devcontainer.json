@@ -1,0 +1,17 @@
+{
+  "name": "Card Validator — Jest Demo",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22-alpine",
+  "postCreateCommand": "apk add --no-cache openssl libc6-compat && npm install && npm run setup",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.fontSize": 16,
+        "editor.fontSize": 16
+      },
+      "extensions": [
+        "prisma.prisma",
+        "orta.vscode-jest"
+      ]
+    }
+  }
+}
