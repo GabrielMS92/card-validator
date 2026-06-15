@@ -1,0 +1,31 @@
+{
+  "name": "card-validator",
+  "version": "1.0.0",
+  "description": "Validador de bandeira de cartão de crédito — projeto de demonstração Jest + TypeScript + Prisma",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev --name init",
+    "db:reset": "prisma migrate reset --force",
+    "setup": "npm run db:generate && npm run db:migrate",
+    "demo:red": "node scripts/toggle.js red && npm test",
+    "demo:green": "node scripts/toggle.js green && npm test"
+  },
+  "keywords": ["jest", "typescript", "prisma", "tdd"],
+  "author": "Grupo Jest — FAESA",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.0",
+    "jest": "^29.7.0",
+    "prisma": "^6.9.0",
+    "ts-jest": "^29.3.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.9.0"
+  }
+}

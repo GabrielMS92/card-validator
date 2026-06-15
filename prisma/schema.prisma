@@ -1,0 +1,17 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Card {
+  id        Int      @id @default(autoincrement())
+  number    String   @unique
+  brand     String
+  valid     Boolean
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,24 @@
+services:
+  test:
+    build: .
+    command: npm test
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+      - ./scripts:/app/scripts
+
+  watch:
+    build: .
+    command: npm run test:watch
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+      - ./scripts:/app/scripts
+
+  coverage:
+    build: .
+    command: npm run test:coverage
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+      - ./coverage:/app/coverage
