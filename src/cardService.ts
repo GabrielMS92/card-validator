@@ -18,7 +18,7 @@ export interface CardResult {
  */
 export async function validateAndSave(cardNumber: string): Promise<CardResult> {
   // DEMO: descomente a linha abaixo para GREEN
-  // return _impl(cardNumber);
+  //return _impl(cardNumber);
 
   throw new Error("Não implementado"); // ← RED: placeholder
 }

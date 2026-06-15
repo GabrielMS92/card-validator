@@ -8,7 +8,7 @@
  */
 export function validateNumber(cardNumber: string): boolean {
   // DEMO: descomente a linha abaixo para GREEN
-  // return _impl(cardNumber);
+  //return _impl(cardNumber);
 
   return false; // ← RED: placeholder (faz o teste falhar)
 }
