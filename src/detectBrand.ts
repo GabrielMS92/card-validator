@@ -7,7 +7,7 @@
  * Bandeiras suportadas: Visa, Mastercard, Elo, American Express.
  */
 export function detectBrand(cardNumber: string): string {
-  // ✅ DEMO: descomente a linha abaixo para GREEN
+  // DEMO: descomente a linha abaixo para GREEN
   // return _impl(cardNumber);
 
   return ""; // ← RED: placeholder (faz o teste falhar)

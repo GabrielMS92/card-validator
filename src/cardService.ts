@@ -17,7 +17,7 @@ export interface CardResult {
  * Detecta a bandeira, valida o número e persiste o resultado via Prisma.
  */
 export async function validateAndSave(cardNumber: string): Promise<CardResult> {
-  // ✅ DEMO: descomente a linha abaixo para GREEN
+  // DEMO: descomente a linha abaixo para GREEN
   // return _impl(cardNumber);
 
   throw new Error("Não implementado"); // ← RED: placeholder

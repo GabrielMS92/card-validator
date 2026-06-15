@@ -7,7 +7,7 @@
  * Retorna true se o dígito verificador estiver correto.
  */
 export function validateNumber(cardNumber: string): boolean {
-  // ✅ DEMO: descomente a linha abaixo para GREEN
+  // DEMO: descomente a linha abaixo para GREEN
   // return _impl(cardNumber);
 
   return false; // ← RED: placeholder (faz o teste falhar)
