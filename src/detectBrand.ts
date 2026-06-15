@@ -8,9 +8,9 @@
  */
 export function detectBrand(cardNumber: string): string {
   // DEMO: descomente a linha abaixo para GREEN
-  return _impl(cardNumber);
+  // return _impl(cardNumber);
 
-  // return ""; // ← RED: placeholder (faz o teste falhar)
+  return ""; // ← RED: placeholder (faz o teste falhar)
 }
 
 // ── Implementação (não mexa aqui) ──────────────────────────
